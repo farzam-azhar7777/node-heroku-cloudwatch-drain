@@ -68,6 +68,6 @@ const app = setupWebServer(function(line) {
 
 setupCloudWatch(cloudWatchLogsInstance, config.logGroup, LOG_STREAM)
 	.then(() => {
-		app.listen(config.serverPort, () => console.log(`Server up on port ${config.serverPort}`));
+		app.listen(process.env.PORT || config.serverPort, () => console.log(`Server up on port ${process.env.PORT || config.serverPort}`));
 	})
 	.catch(error => console.log(error));
