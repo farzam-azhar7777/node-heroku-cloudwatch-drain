@@ -66,8 +66,8 @@ const app = setupWebServer(function(line) {
 	}
 });
 
-setupCloudWatch(cloudWatchLogsInstance, config.logGroup, LOG_STREAM)
-	.then(() => {
-		app.listen(process.env.PORT || config.serverPort, '0.0.0.0', () => console.log(`Server up on port ${process.env.PORT || config.serverPort} and heroku PORT is ${process.env.PORT}`));
-	})
-	.catch(error => console.log(error));
+// setupCloudWatch(cloudWatchLogsInstance, config.logGroup, LOG_STREAM)
+// 	.then(() => {
+// 		app.listen(process.env.PORT || config.serverPort, '0.0.0.0', () => console.log(`Server up on port ${process.env.PORT || config.serverPort} and heroku PORT is ${process.env.PORT}`));
+// 	})
+// 	.catch(error => console.log(error));
