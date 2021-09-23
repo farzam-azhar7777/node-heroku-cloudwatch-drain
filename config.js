@@ -3,7 +3,7 @@ module.exports = {
   batchSize: 50,
 
   // at what port should our server be listening
-  serverPort: 3002,
+  serverPort: process.env.PORT,
 
   // your cloudwatch log group
   logGroup: 'WeGuideEngageCanaryLogGroup',
