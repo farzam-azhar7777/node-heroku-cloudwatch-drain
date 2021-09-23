@@ -10,11 +10,11 @@ function parseMessages(body) {
 module.exports = function(accessToken) {
 	return function(onNewMessage) {
 		app.use(function(req, res, next) {
-			if (req.query.accessToken !== accessToken) {
-				return res.status(401).json({
-					message: "Invalid token",
-				});
-			}
+			// if (req.query.accessToken !== accessToken) {
+			// 	return res.status(401).json({
+			// 		message: "Invalid token",
+			// 	});
+			// }
 
 			next();
 		});
