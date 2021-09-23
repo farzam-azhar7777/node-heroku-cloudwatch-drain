@@ -1,6 +1,8 @@
 const app = require("express")();
 const bodyParser = require("body-parser");
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use(bodyParser.raw({ type: "application/logplex-1", limit: "10mb" }));
 
 function parseMessages(body) {
