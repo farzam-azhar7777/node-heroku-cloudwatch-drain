@@ -573,6 +573,15 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+node-heroku-cloudwatch-drain@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/node-heroku-cloudwatch-drain/-/node-heroku-cloudwatch-drain-0.0.8.tgz#df7b7dc445df95059e8a31338bce8ce96bc59975"
+  integrity sha1-33t9xEXflQWeijEzi86M6WvFmXU=
+  dependencies:
+    aws-sdk "^2.90.0"
+    body-parser "^1.17.2"
+    express "^4.15.3"
+
 oauth-sign@~0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
