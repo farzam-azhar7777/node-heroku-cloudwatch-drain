@@ -17,5 +17,5 @@ module.exports = {
   },
 
   // access token, which will be sent from heroku on every request
-  accessToken: "sometoken"
+  accessToken: null
 };
